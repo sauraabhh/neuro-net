@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------- Toasts ----------*/
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+/*---------------------------------------- elements ----------------------------------------*/
+
+hr {
+    width: 85%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------------------------- base.html ----------------------------------------*/
+
+/*---------- Navigation ----------*/
+.brand-title {
+    display: none;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 7vh;
+    z-index: 1;
+}
+
+.nav-logo {
+    max-width: 4.375rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-brand {
+    padding-bottom: .3125rem;
+}
+
+.nav-link {
+    padding-bottom: 0.3rem;
+    padding: 0;
+}
+
+.navbar-bg {
+    background-color: #DCDCDC;
+}
+
+.pt-1 {
+    padding-top: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 3rem;
+    
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.custom-nav-icon {
+    display: none;
+}
+/* Code to change "Already a member? Log in" background */
+/* .unauthorized-loginrequest {
+    background-color: #3D3D3D;
+    border: 1px solid #3D3D3D;
+    border-radius: 8px;
+    padding: .346rem;
+}
+
+#text-dark-overwrite {
+    color: white!important;
+}
+
+#text-primary-overwrite {
+    color: #f8b039!important;
+} */
+
+
+/*---------- Footer ----------*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-overwrite {
+    padding-top: revert !important;
+    padding-bottom: revert !important;
+}
+
+#footer-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#socialmedialist-overwrite {
+    margin-top: revert;
+    margin-bottom: revert;
+}
+
+.socialmedialink-overwrite {
+    margin-top: revert;
+    margin-bottom: revert;
+
+}
+
+
+
+
+
+
+/*---------------------------------------- Allauth Templates ----------------------------------------*/
+
+
+
+
+/* ACCOUNTS LOGOUT */
+.confirm-action {
+    background-color: #f8f9faba;
+    margin: auto;
+    width: 50%;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.confirm-container {
+    background: url(/media/bg.png) center center fixed;
+    display: flex;
+    min-height: 82vh;
+    background-size: cover;
+}
+
+.signout-logo {
+    max-width: 5.375rem;
+    padding-bottom: 1rem;
+}
+
+#signout-button {
+    background-color: #191919;
+    border: 1px solid #191919;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+
+
+
+/*----------------------------------------Homepage/index.html ----------------------------------------*/
+/* CONTENT CONTAINERS */
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.callout-container {
+    height: 93vh;
+    background: url(../../media/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: rgba(99, 99, 99, 0.603);
+    margin-bottom: 70px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 40px 50px 0 rgba(88, 88, 88, 0.6), 0 10px 50px 0 rgba(0, 0, 0, 0.7);
+    margin-top: 3rem;
+}
+
+.jumbotron-header{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead{
+    color: rgb(36, 36, 36);
+}
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: rgb(206, 206, 206);
+}
+
+.jumbo-div{
+    display: inline-block;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    color: rgb(54, 54, 54);
+    margin: 10px;
+    box-shadow: 0 40px 50px 0 rgba(148, 148, 148, 0.6), 0 10px 50px 0 rgba(0,0,0,0.7);
+}
+.lead{
+    font-size: medium;
+}
+
+#jumbo-logo{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+
+.feature{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i{
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn{
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: grey;
+}
+
+.index-content {
+    margin-bottom: 6rem;
+}
+
+.testimonial-image {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.testimonial-hr {
+    display: block;
+    margin: auto;
+    background-color: unset;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.testimonial-hr {
+    display: none;
+}
+
+/* BUTTONS */
+.btn--cta{
+    font-weight: bold;
+    border-radius: 23px;
+    width: 175px;
+}
+.btn--grey{
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+    border: 2px solid white;
+}
+.btn--grey:hover,
+.btn--grey:active,
+.btn--grey:focus,
+.btn--grey:active:focus{
+    color: rgb(0, 0, 0);
+    background-color: rgb(185, 185, 185);
+    border-color: rgb(168, 168, 168);
+}
+
+
+
+
+
+
+
+/*---------------------------------------- Profiles/profile.html ----------------------------------------*/
+body{
+    overflow-x: hidden;
+}
+.profile-picture-container{
+    background-color: rgba(99, 99, 99, 0.603);
+    box-shadow: 0 40px 50px 0 rgba(88, 88, 88, 0.6), 0 10px 50px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    min-height: 315px;
+    min-width: 315px;
+    max-height: 315px;
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+}
+.profile-picture{
+    background: url(../../media/people/2-400x400.jpeg) no-repeat center center;
+    background-size: cover;
+    min-height: 290px;
+    max-height: 290px;
+    min-width: 290px;
+    max-width: 290px;
+    border-radius: 50%;
+
+    filter: grayscale(100%);
+}
+.profile-name-and-role{
+    text-align: right;
+}
+.profile-name{
+    font-size: 5rem;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+.profile-role{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-right: 100px;
+    margin-bottom: 50px;
+}
+.nav-full-container{
+    text-align: center;
+}
+
+.profile-nav{
+    border-radius: 10px;
+}
+.profile-nav:hover{
+    box-shadow: 0 10px 10px 0 rgba(88, 88, 88, 0.6), 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.profile-nav a{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(238, 238, 238);
+}
+.profile-nav a:focus{
+    color: white;
+}
+.profile-nav a:hover{
+    color: black;
+}
+.profile-nav .fas{
+    font-size: 20px;
+    display: block;
+}
+.nav-1{
+    background: radial-gradient(#7e611f, #EFB83A);
+}
+.nav-2{
+    background: radial-gradient(#754744, #DD817D);
+}
+.nav-3{
+    background: radial-gradient(#6b3a4d, #D4739A);
+}
+.nav-4{
+    background: radial-gradient(#3d503e, #81AA84);
+}
+.nav-5{
+    background: radial-gradient(#2c3c5c, #6182CB);
+}
+.nav-6{
+    background: radial-gradient(#0c404e, #1EAAD2);
+}
+
+.section-title-cont{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.heading-logo{
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+
+.contact-heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top: 0px;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(200, 200, 200);
+    color: rgb(34, 76, 138);
+}
+
+.form-control{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.contact-form{
+    background-color: rgb(34, 76, 138);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    
+}
+.form-control:hover,
+.form-control:active,
+.form-control:focus{
+    background-color: rgb(219, 235, 255);
+}
+
+
+#backtotop{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    font-size: 50px;
+}
+#backtotop a{
+    color: grey;
+}
+
+.bottom-block{
+    height: 80px;
+}
+
+/*---------------------------------------- Media Queries ----------------------------------------*/
+@media screen and (min-width: 990px) {
+    .brand-title {
+        display: inline;
+    }
+    .custom-nav-icon {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .navbar-bg {
+        background-color: white;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .center-form{
+        max-width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .center-form{
+        max-width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 340px){
+    button[type="submit"]{
+        width: 90%;
+    }
+  }

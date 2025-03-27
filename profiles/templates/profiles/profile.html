@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row picture-name-nav">
+    <div class="col-md-3 profile-picture-container">
+        <div class="profile-picture"></div>
+    </div>
+    <div class="col-md-9 profile-name-and-role">
+        <h1 class="profile-name">Alec Lee</h1>
+        <h2 class="profile-role">Junior Software Developer</h2>
+        <div class="row nav-full-container">
+            <ul class="col nav">
+                <li class="nav-item profile-nav nav-1 col-6 col-md-2">
+                    <a href="#AboutMe" class="nav-link"><i class="fas fa-user-tie"></i>About Me</a>
+                </li>
+                <li class="nav-item profile-nav nav-2 col-6 col-md-2">
+                    <a href="#Skills" class="nav-link"><i class="fas fa-user-cog"></i>Skills</a>
+                </li>
+                <li class="nav-item profile-nav nav-3 col-6 col-md-2">
+                    <a href="#WorkEducation" class="nav-link"><i class="fas fa-user-graduate"></i>Work & Education</a>
+                </li>
+                <li class="nav-item profile-nav nav-4 col-6 col-md-2">
+                    <a href="#VideoUploads" class="nav-link"><i class="fas fa-photo-video"></i>Video Uploads</a>
+                </li>
+                <li class="nav-item profile-nav nav-5 col-6 col-md-2">
+                    <a href="#ContactMe" class="nav-link"><i class="fas fa-comment"></i>Contact Me</a>
+                </li>
+                <li class="nav-item profile-nav nav-6 col-6 col-md-2">
+                    <a href="#" class="nav-link"><i class="fas fa-download"></i>CV Download</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col section-title-cont">
+        <img src="../../../media/logonotext.png" alt="neuronet logo" class="heading-logo" id="AboutMe"><h2 class="uppercase">About Me</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col section-title-cont">
+        <img src="../../../media/logonotext.png" alt="neuronet logo" class="heading-logo" id="Skills"><h2 class="uppercase">Skills</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col section-title-cont">
+        <img src="../../../media/logonotext.png" alt="neuronet logo" class="heading-logo" id="WorkEducation"><h2 class="uppercase">Work & Education</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col section-title-cont">
+        <img src="../../../media/logonotext.png" alt="neuronet logo" class="heading-logo" id="VideoUploads"><h2 class="uppercase">Video Uploads</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col section-title-cont">
+        <img src="../../../media/logonotext.png" alt="neuronet logo" class="heading-logo" id="ContactMe"><h2 class="uppercase">Contact Me</h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3 class="contact-heading uppercase text-center">Need to contact me?</h3>
+            <h5 class="uppercase text-center">Please use the form below.</h5>
+
+            <div class="center-form">
+                <form class="contact-form">
+                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required/>
+                    <textarea rows="10" name="message" id="message" class="form-control" placeholder="Your message" required></textarea>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-secondary">Send <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="backtotop">
+    <a href="#Home" aria-label="Back to top button"><i class="fas fa-arrow-alt-circle-up"></i></a>
+</div>
+<div class="bottom-block"></div>
+{% endblock %}

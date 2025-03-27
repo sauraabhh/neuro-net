@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light" id="Home">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="/media/logonotext.png" alt="rainbow infinity sign" class="nav-logo">
+            <span class="brand-title">Neuronet</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-bg collapse navbar-collapse unauthorized-loginrequest" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}"><i class="fas fa-home custom-nav-icon"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="{% url 'profiles' %}"><i class="fas fa-user custom-nav-icon"></i>Profile</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-briefcase custom-nav-icon"></i>Job Board</a>
+                    </li>
+                    {% if request.user.is_superuser %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admin</a>
+                        </li>
+                    {% endif %}
+            </ul>
+                    <span class="nav-item">
+                        <a class="nav-link text-muted log-in-out" href="{% url 'account_logout' %}"><i class="fas fa-sign-out-alt custom-nav-icon"></i>Log out</i></a>
+                    </span>
+                {% else %}    
+                    <span class="navbar-item pt-1">
+                        <a class="nav-link text-dark log-in-out" id="text-dark-overwrite"  href="{% url 'account_login' %}">Already a member? <span class="text-primary" id="text-primary-overwrite">Log in</span></a>
+                    </span>
+                {% endif %}
+        </div>
+    </div>
+</nav>
